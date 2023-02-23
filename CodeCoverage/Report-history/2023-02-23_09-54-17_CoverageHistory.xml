@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2023-02-23_09-54-17" tag="">
+  <assembly name="Editmode">
+    <class name="Tester" coveredlines="8" coverablelines="8" totallines="25" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Playmode1">
+    <class name="Tests.PlayTester" coveredlines="20" coverablelines="20" totallines="62" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Script">
+    <class name="CameraPan" coveredlines="6" coverablelines="6" totallines="19" coveredbranches="0" totalbranches="0" />
+    <class name="DefaultVal" coveredlines="8" coverablelines="8" totallines="20" coveredbranches="0" totalbranches="0" />
+    <class name="Movement" coveredlines="36" coverablelines="39" totallines="85" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>

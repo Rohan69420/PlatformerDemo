@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>2/23/2023 - 9:54:23 AM</Generatedon>
+    <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
+    <Assemblies>3</Assemblies>
+    <Classes>5</Classes>
+    <Files>5</Files>
+    <Coveredlines>78</Coveredlines>
+    <Uncoveredlines>3</Uncoveredlines>
+    <Coverablelines>81</Coverablelines>
+    <Totallines>211</Totallines>
+    <Linecoverage>96.2</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+  </Summary>
+  <Coverage>
+    <Assembly name="Editmode" classes="1" coverage="100" coveredlines="8" coverablelines="8" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="Tester" coverage="100" coveredlines="8" coverablelines="8" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Playmode1" classes="1" coverage="100" coveredlines="20" coverablelines="20" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="Tests.PlayTester" coverage="100" coveredlines="20" coverablelines="20" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+    <Assembly name="Script" classes="3" coverage="94.3" coveredlines="50" coverablelines="53" totallines="124" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="CameraPan" coverage="100" coveredlines="6" coverablelines="6" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="DefaultVal" coverage="100" coveredlines="8" coverablelines="8" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="Movement" coverage="92.3" coveredlines="36" coverablelines="39" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>
