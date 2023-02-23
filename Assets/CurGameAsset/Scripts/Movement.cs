@@ -28,6 +28,17 @@ public class Movement : MonoBehaviour
             XmoveVel = DefaultInstance.getX_vel();
         }
 
+        //null check
+        if (rigidbody == null)
+        {
+            //GameObject go = GameObject.Find("Player");
+            rigidbody = GetComponent<Rigidbody2D>(); //get component from gameobject in Playmode Test
+            if (rigidbody == null)
+            {
+                Debug.Log("Rigidbody still not referenced!");
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
         Debug.Log("Up arrow pressed!");
@@ -48,22 +59,27 @@ public class Movement : MonoBehaviour
 
         directionX = Input.GetAxis("Horizontal");
         rigidbody.velocity = new Vector2(directionX * XmoveVel, rigidbody.velocity.y);
-        
-        //check if orientation is correct
-        if(rigidbody.velocity.x < 0f)
+
+
+        //Don't do this if orientation test in not included in Playmode Test
+        if (animator != null)
         {
-            sprite.flipX = true;
-            animator.SetBool("running", true);
-        }
-        else if (rigidbody.velocity.x == 0f)
-        {
-            //idling
-            animator.SetBool("running", false);
-        }
-        else
-        {
-            sprite.flipX = false;
-            animator.SetBool("running", true);
+            //check if orientation is correct
+            if (rigidbody.velocity.x < 0f)
+            {
+                sprite.flipX = true;
+                animator.SetBool("running", true);
+            }
+            else if (rigidbody.velocity.x == 0f)
+            {
+                //idling
+                animator.SetBool("running", false);
+            }
+            else
+            {
+                sprite.flipX = false;
+                animator.SetBool("running", true);
+            }
         }
     }
 }
